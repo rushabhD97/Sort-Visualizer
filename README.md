@@ -1,4 +1,4 @@
-# Sorting Visualizer
+# [Sorting Visualizer](https://rushabhd97.github.io/Sort-Visualizer/)
 
 Visualize various sorting algorithms
 
