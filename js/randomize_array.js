@@ -6,7 +6,7 @@ var margin_size=0.1
 function randomize() {
     array_size = parseInt(document.getElementById("arraySizeText").value) || 10
     console.log(array_size)
-    if(array_size > 400)
+    if(array_size > 400 || array_size<5)
         return
     // array_size = array_size || 10
     
