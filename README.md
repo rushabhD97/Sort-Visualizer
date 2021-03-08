@@ -7,8 +7,8 @@ Visualize various sorting algorithms
  - [x] *Bubble Sort Implementation* 
  - [x] *Selection Sort Implementation*
  - [x] *Insertion Sort Implementation*
- - [ ] *Quick Sort Implementation*
- - [ ] *Merge Sort Implementation* 
+ - [x] *Quick Sort Implementation*
+ - [x] *Merge Sort Implementation* 
  - [x] Stable Selection Sort Implementation
  - [ ] Speed Control
  - [ ] Configure custom color
