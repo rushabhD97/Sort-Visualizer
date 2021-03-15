@@ -20,20 +20,31 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form >
-                <input  type="number" id="arraySizeText" class="form-control m-2" id="arraySizeFormControlInput" placeholder="Enter Size" min="5" max="400">
-                <button type="button" id="randomizeButton" class="btn btn-dark m-2" onclick="randomize()" >Randomize
-                    Array</button>
-                    </form>
+                <!-- <form> -->
+                    <label for="arraySizeRange">Size of array</label>
+                    <input type="range" class="form-range" id="arraySizeRange" min="5" max="100" step="5" onchange="update_size(this.value)">
+                    <label for="speedRange">Speed</label>
+                    <input type="range" class="form-range" id="speedRange" min="0" max="1000" step="10" onchange="update_speed(this.value)"
+                    style="direction: rtl;">
+                    <!-- <input type="number" id="arraySizeText" class="form-control m-2" id="arraySizeFormControlInput" -->
+                        <!-- placeholder="Enter Size" min="5" max="400"> -->
+                    <!-- <button type="button" id="randomizeButton" class="btn btn-dark m-2" onclick="randomize()">Randomize
+                        Array</button> -->
+                <!-- </form> -->
             </div>
             <div class="col-6">
                 <button type="button" id="bubbleSortButton" class="btn btn-dark m-2" onclick="bubbleSort()">Bubble
                     Sort</button>
-                <button type="button" id="selectionSortButton" class="btn btn-dark m-2" onclick="selectionSort()">Selection Sort</button>
-                <button type="button" id="insertionSortButton" class="btn btn-dark m-2" onclick="insertionSort()">Insertion Sort</button>
-                <button type="button" id="stableSelectionSortButton" class="btn btn-dark m-2" onclick="stableSelectionSort()">Stable Selection Sort</button>
-                <button type="button" id="quickSortButton" class="btn btn-dark m-2" onclick="quickSort()">Quick Sort</button>
-                <button type="button" id="mergeSortButton" class="btn btn-dark m-2" onclick="mergerSort()">Merge Sort</button>
+                <button type="button" id="selectionSortButton" class="btn btn-dark m-2"
+                    onclick="selectionSort()">Selection Sort</button>
+                <button type="button" id="insertionSortButton" class="btn btn-dark m-2"
+                    onclick="insertionSort()">Insertion Sort</button>
+                <button type="button" id="stableSelectionSortButton" class="btn btn-dark m-2"
+                    onclick="stableSelectionSort()">Stable Selection Sort</button>
+                <button type="button" id="quickSortButton" class="btn btn-dark m-2" onclick="quickSort()">Quick
+                    Sort</button>
+                <button type="button" id="mergeSortButton" class="btn btn-dark m-2" onclick="mergerSort()">Merge
+                    Sort</button>
             </div>
         </div>
     </div>
@@ -50,6 +61,15 @@
     <script src="js/stable_selection_sort.js"></script>
     <script src="js/quick_sort.js"></script>
     <script src="js/merge_sort.js"></script>
+    <script>
+        function update_size(val){
+            array_size=val
+            randomize()
+        }
+        function update_speed(val){
+            delay=val
+        }
+    </script>
 </body>
 
 </html>
